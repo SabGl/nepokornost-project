@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10%;
+
+  &__title{
+    width: 376px;
+    margin-right: 25%;
+  }
+
+  &__text{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 400px;
+    min-height: 400px;
+  }
+
+}
+
+.main-img{
+  display: flex;
+  margin-right: 15%;
+}

@@ -1,0 +1,29 @@
+<nav class="menu">
+  <div class="logo-img">
+    <img [routerLink]='["/"]' src="assets/img/Logo-НП-03%20(1)%201.png" alt="NPKRNST">
+  </div>
+  <div class="menu__links">
+    <a [routerLink]='["/"]' class="menu__ru" mat-button>HOME</a>
+    <a [routerLink]='["/about"]' class="menu__ru" mat-button>ABOUT</a>
+    <a [routerLink]='["/look-book"]' class="menu__ru" mat-button>LOOKBOOK</a>
+    <a [routerLink]='["/shop"]' class="menu__ru" mat-button>SHOP</a>
+    <a class="menu__ru" mat-button >CONTACT</a>
+    <div class="menu__language">
+      <a class="menu__en" mat-button href="https://www.google.com/">EN</a>
+      <a class="menu__ru" mat-button href="https://www.google.com/">RU</a>
+    </div>
+    <a class="menu__home" mat-button href="#">
+      <mat-icon>shopping_cart</mat-icon>
+    </a>
+    <a class="menu__search" mat-button href="#">
+      <mat-icon>search</mat-icon>
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

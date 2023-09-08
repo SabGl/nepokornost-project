@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="container__img">
+    <img src="assets/img/model%20in%20flowers%20near%20white%20house.png" alt="model in flowers">
+  </div>
+  <div class="container__form">
+    <div class="container__title-price">
+      <span>Платье "Дождь" на запах.</span>
+      <div>150€</div>
+    </div>
+    <div>
+      <div class="container__description">Здесь будет описание модели, информация о ткани, фокус на деталях и крое. Где
+        черпали вдохновение на создание
+        модели.
+      </div>
+    </div>
+    <div class="container__check-box">
+      <mat-checkbox class="example-margin" color="primary" [(ngModel)]="checked">Белый</mat-checkbox>
+    </div>
+    <div class="container__size">
+      <a [routerLink]='["/size-constructor"]' class="menu__ru" mat-button>Определить свой размер</a>
+    </div>
+    <div class="container__choose-variant">
+      <div class="container__text">Выберете римскую цифру</div>
+      <div>
+        <mat-button-toggle-group class="container__numbers" name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle class="container__btn" value="bold">I</mat-button-toggle>
+          <mat-button-toggle class="container__btn" value="italic">II</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+
+  </div>
+</div>
